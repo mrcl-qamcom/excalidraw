@@ -409,6 +409,7 @@ class Collab extends PureComponent<Props, CollabState> {
           transports: socketServerData.polling
             ? ["websocket", "polling"]
             : ["websocket"],
+          path: `${location.pathname}socket.io`,
         }),
         roomId,
         roomKey,
